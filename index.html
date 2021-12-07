@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseFrontEnd</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="pt-4">
+            <ul>
+                <li class="logo">
+                    <img src="assets/images/logoipsum.svg" alt="" srcset="">
+                </li>
+
+                <li class="w-full flex justify-end gap-8">
+                    <a class="pb-2" :class="[active=='home'?'border-b-2 border-gray-600': '']" href="">HOME</a>
+                    <a class="pb-2" :class="[active=='buy'?'border-b-2 border-gray-600': '']" href="">BUY</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- home -->
+        <section class="mx-auto flex flex-row items-center justify-center w-10/12">
+            <div class="w-1/2 p-4">
+                <img src="assets/images/shoe.png" alt="">
+            </div>
+            <div class="w-1/2 flex flex-col items-start h-full">
+
+                <h1 class="capitalise text-6xl">
+                    New <span class="text-yellow-600">Winter</span><br>
+                    Arrivals
+                </h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut molestias, ullam nesciunt sunt
+                    doloremque est? Tempora vitae, vel consequuntur omnis commodi quas recusandae dolores nisi, debitis
+                    sunt officia veniam facilis.
+                </p>
+                <button id="buy-btn" class="w-56 px-12 py-2 text-white rounded rounded-lg">
+                    Buy Now
+                </button>
+
+            </div>
+        </section>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

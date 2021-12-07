@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+nav {
+    width: 80%;
+    /* background: #000; */
+    margin: 0 auto; 
+    height: 4rem;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section:last-child {
+    background-image: url("assets/images/dot.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#buy-btn {
+    background: rgb(251,105,0);
+    background: linear-gradient(342deg, rgba(251,105,0,1) 0%, rgba(242,162,48,1) 100%); 
+}
